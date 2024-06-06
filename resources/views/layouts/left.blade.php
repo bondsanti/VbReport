@@ -38,6 +38,38 @@
                   </li>
                   <li class="nav-item">
                       <a style="" href="" class="nav-link ">
+                          <i class="nav-icon fa-solid fa-magnifying-glass" style="color: #fffb00;"></i>
+                          <p>
+                              ค้นหารายการ
+                          </p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a style="" href="" class="nav-link ">
+                          <i class="nav-icon fa-solid fa-file-circle-plus" style="color: #fffb00;"></i>
+                          <p>
+                              เพิ่มรายการใหม่
+                          </p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a style="" href="" class="nav-link ">
+                          <i class="nav-icon fa-solid fa-file-pen" style="color: #fffb00;"></i>
+                          <p>
+                              เพิ่ม / แก้ไขทีม
+                          </p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a style="" href="" class="nav-link ">
+                          <i class="nav-icon fa-solid fa-user" style="color: #fffb00;"></i>
+                          <p>
+                              Agent
+                          </p>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a style="" href="" class="nav-link ">
                           <i class="nav-icon fa-solid fa-file-signature" style="color: #fffb00;"></i>
                           <p>
                               Report P Zen Team
