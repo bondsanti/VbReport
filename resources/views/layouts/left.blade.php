@@ -37,7 +37,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a style="" href="" class="nav-link ">
+                      <a style="" href="{{ route('lists') }}" class="nav-link {{ request()->routeIs('lists') ? 'active' : '' }} {{ request()->routeIs('lists.search') ? 'active' : '' }}">
                           <i class="nav-icon fa-solid fa-magnifying-glass" style="color: #fffb00;"></i>
                           <p>
                               ค้นหารายการ

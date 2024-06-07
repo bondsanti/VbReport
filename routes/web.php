@@ -7,6 +7,7 @@ Use App\Http\Controllers\MorgagedController;
 Use App\Http\Controllers\YeartargetController;
 Use App\Http\Controllers\BankController;
 Use App\Http\Controllers\ReportController;
+Use App\Http\Controllers\ListController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +47,9 @@ Route::prefix('/report')->group(function () {
 
     Route::get('/saleinout',[ReportController::class,'inout'])->name('saleinout');
     Route::post('/saleinout/search',[ReportController::class,'inout_search'])->name('saleinout.search');
+
+    Route::get('/lists',[ListController::class,'index'])->name('lists');
+    Route::post('/lists/search',[ListController::class,'search'])->name('lists.search');
 
 
 
