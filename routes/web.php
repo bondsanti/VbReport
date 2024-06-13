@@ -8,6 +8,7 @@ Use App\Http\Controllers\YeartargetController;
 Use App\Http\Controllers\BankController;
 Use App\Http\Controllers\ReportController;
 Use App\Http\Controllers\ListController;
+Use App\Http\Controllers\AddReportController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,6 +52,7 @@ Route::prefix('/report')->group(function () {
     Route::get('/lists',[ListController::class,'index'])->name('lists');
     Route::post('/lists/search',[ListController::class,'search'])->name('lists.search');
 
-
+    Route::get('/add',[AddReportController::class,'index'])->name('add');
+    Route::get('/editadd',[AddReportController::class,'edit'])->name('edit');
 
 });

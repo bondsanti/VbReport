@@ -45,7 +45,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a style="" href="" class="nav-link ">
+                      <a style="" href="{{ route('add') }}" class="nav-link {{ request()->routeIs('add') ? 'active' : '' }}">
                           <i class="nav-icon fa-solid fa-file-circle-plus" style="color: #fffb00;"></i>
                           <p>
                               เพิ่มรายการใหม่
@@ -53,7 +53,7 @@
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a style="" href="" class="nav-link ">
+                      <a style="" href="{{ route('edit') }}" class="nav-link {{ request()->routeIs('edit') ? 'active' : '' }}">
                           <i class="nav-icon fa-solid fa-file-pen" style="color: #fffb00;"></i>
                           <p>
                               เพิ่ม / แก้ไขทีม
