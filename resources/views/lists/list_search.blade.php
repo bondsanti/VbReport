@@ -319,7 +319,101 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                          
+                            <div class="card">
+                                <div class="card-header card-outline card-info">
+                                    <h3 class="card-title">ข้อมูล ค้นหารายกาย</h3>
+                                </div>
+                                <div class="card-body">
+                                    <table id="table" class="table table-hover table-striped text-center">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Team ID</th>
+                                                <th>Team Name</th>
+                                                <th>Name</th>
+                                                <th>Grade</th>
+                                                <th>อนุมัติ Grade</th>
+                                                <th>Sourcecode</th>
+                                                <th>Tel</th>
+                                                <th>ฐานเงินเดือน</th>
+                                                <th>Bank</th>
+                                                <th>Status</th>
+                                                <th>วันที่เเจ้งโอน</th>
+                                                <th>สถานะเเจ้งโอน</th>
+                                                <th>ประเภทรายได้</th>
+                                                <th>โครงการ</th>
+                                                <th>ห้อง</th>
+                                                <th>Received Date</th>
+                                                <th>Sent Date</th>
+                                                <th>Result Date</th>
+                                                <th>Result Reason</th>
+                                                <th>Remark นิติกรรม</th>
+                                                <th>วงเงินอนุมัติ1</th>
+                                                <th>วงเงินอนุมัติ2</th>
+                                                <th>วงเงินอนุมัติ ไม่รวมประกัน</th>
+                                                <th>ราคาซื้อขาย</th>
+                                                <th>จำนวนเงินการันตี</th>
+                                                <th>เงินการันตีหักภาษี 5 %</th>
+                                                <th>Rej/Wait</th>
+                                                <th>Analyst</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <a class="btn btn-primary btn-sm" href="{{route('list.show')}}">
+                                                        <i class="fas fa-eye"></i>
+                                                        View
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-info btn-sm" href="#">
+                                                        <i class="fas fa-pencil-alt">
+                                                        </i>
+                                                        Edit
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="btn btn-danger btn-sm" href="#">
+                                                        <i class="fas fa-trash">
+                                                        </i>
+                                                        Delete
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -327,3 +421,26 @@
         </div>
     </section>
 @endsection
+<script>
+    $(document).ready(function() {
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $('#table').DataTable({
+            'paging': false,
+            'lengthChange': false,
+            'searching': false,
+            'ordering': true,
+            'info': false,
+            'autoWidth': false,
+            "responsive": true,
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [0, 1, 2, 3]
+            }]
+        });
+    });
+</script>

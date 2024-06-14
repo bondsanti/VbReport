@@ -60,16 +60,16 @@
                           </p>
                       </a>
                   </li>
-                  <li class="nav-item">
-                      <a style="" href="" class="nav-link ">
+                  {{-- <li class="nav-item">
+                      <a style="" href="{{ route('agent') }}" class="nav-link {{ request()->routeIs('agent') ? 'active' : '' }}">
                           <i class="nav-icon fa-solid fa-user" style="color: #fffb00;"></i>
                           <p>
                               Agent
                           </p>
                       </a>
-                  </li>
+                  </li> --}}
                   <li class="nav-item">
-                      <a style="" href="" class="nav-link ">
+                      <a style="" href="{{ route('zen') }}" class="nav-link {{ request()->routeIs('zen.search') ? 'active' : '' }} {{ request()->routeIs('zen') ? 'active' : '' }}">
                           <i class="nav-icon fa-solid fa-file-signature" style="color: #fffb00;"></i>
                           <p>
                               Report P Zen Team

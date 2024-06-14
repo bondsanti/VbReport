@@ -15,4 +15,11 @@ class ListController extends Controller
     {
         return view('lists.list_search');
     }
+
+    public function show_list()
+    {
+
+
+        return view('lists.show_list');
+    }
 }

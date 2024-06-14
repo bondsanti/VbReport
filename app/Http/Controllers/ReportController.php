@@ -67,4 +67,16 @@ class ReportController extends Controller
         return view('report.saleinout.in_out_search');
     }
     // End - รายงาน Sale in out //
+
+     // Start - รายงาน Sale in out //
+     public function zen()
+     {
+         return view('report.zenTeam.zen');
+     }
+
+     public function zen_search()
+     {
+         return view('report.zenTeam.zen_search');
+     }
+     // End - รายงาน Sale in out //
 }

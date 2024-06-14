@@ -9,6 +9,8 @@ Use App\Http\Controllers\BankController;
 Use App\Http\Controllers\ReportController;
 Use App\Http\Controllers\ListController;
 Use App\Http\Controllers\AddReportController;
+use App\Http\Controllers\AgentController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -49,10 +51,16 @@ Route::prefix('/report')->group(function () {
     Route::get('/saleinout',[ReportController::class,'inout'])->name('saleinout');
     Route::post('/saleinout/search',[ReportController::class,'inout_search'])->name('saleinout.search');
 
+    Route::get('/ZenTeam',[ReportController::class,'zen'])->name('zen');
+    Route::post('/ZenTeam/search',[ReportController::class,'zen_search'])->name('zen.search');
+
     Route::get('/lists',[ListController::class,'index'])->name('lists');
     Route::post('/lists/search',[ListController::class,'search'])->name('lists.search');
+    Route::get('/list/view',[ListController::class,'show_list'])->name('list.show');
 
     Route::get('/add',[AddReportController::class,'index'])->name('add');
     Route::get('/editadd',[AddReportController::class,'edit'])->name('edit');
 
+    Route::get('/agenr',[AgentController::class,'index'])->name('agent');
+    Route::get('/add/agent',[AgentController::class,'add_agent'])->name('agent.add');
 });
