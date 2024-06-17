@@ -30,15 +30,15 @@
                   data-accordion="false">
                   <li class="nav-item">
                       <a href="{{ route('main') }}" class="nav-link {{ request()->routeIs('main') ? 'active' : '' }}">
-                          <i class="nav-icon fas fa-tachometer-alt" style="color: #fffb00;"></i>
+                          <i class="nav-icon fas fa-tachometer-alt" ></i>
                           <p>
                               แดชบอร์ด
                           </p>
                       </a>
                   </li>
                   <li class="nav-item">
-                      <a style="" href="{{ route('lists') }}" class="nav-link {{ request()->routeIs('lists') ? 'active' : '' }} {{ request()->routeIs('lists.search') ? 'active' : '' }}">
-                          <i class="nav-icon fa-solid fa-magnifying-glass" style="color: #fffb00;"></i>
+                      <a style="" href="{{ route('lists') }}" class="nav-link {{ request()->routeIs('lists') ? 'active' : '' }} {{ request()->routeIs('lists.search') ? 'active' : '' }} {{ request()->routeIs('list.show') ? 'active' : '' }} {{ request()->routeIs('lists.edit') ? 'active' : '' }}">
+                          <i class="nav-icon fa-solid fa-magnifying-glass" ></i>
                           <p>
                               ค้นหารายการ
                           </p>
@@ -46,7 +46,7 @@
                   </li>
                   <li class="nav-item">
                       <a style="" href="{{ route('add') }}" class="nav-link {{ request()->routeIs('add') ? 'active' : '' }}">
-                          <i class="nav-icon fa-solid fa-file-circle-plus" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-solid fa-file-circle-plus" ></i>
                           <p>
                               เพิ่มรายการใหม่
                           </p>
@@ -54,7 +54,7 @@
                   </li>
                   <li class="nav-item">
                       <a style="" href="{{ route('edit') }}" class="nav-link {{ request()->routeIs('edit') ? 'active' : '' }}">
-                          <i class="nav-icon fa-solid fa-file-pen" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-solid fa-file-pen" ></i>
                           <p>
                               เพิ่ม / แก้ไขทีม
                           </p>
@@ -62,7 +62,7 @@
                   </li>
                   {{-- <li class="nav-item">
                       <a style="" href="{{ route('agent') }}" class="nav-link {{ request()->routeIs('agent') ? 'active' : '' }}">
-                          <i class="nav-icon fa-solid fa-user" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-solid fa-user" ></i>
                           <p>
                               Agent
                           </p>
@@ -70,7 +70,7 @@
                   </li> --}}
                   <li class="nav-item">
                       <a style="" href="{{ route('zen') }}" class="nav-link {{ request()->routeIs('zen.search') ? 'active' : '' }} {{ request()->routeIs('zen') ? 'active' : '' }}">
-                          <i class="nav-icon fa-solid fa-file-signature" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-solid fa-file-signature" ></i>
                           <p>
                               Report P Zen Team
                           </p>
@@ -79,7 +79,7 @@
                   <li class="nav-item">
                       <a style="" href=""
                           class="nav-link {{ request()->routeIs('mortgaged') ? 'active' : '' }} {{ request()->routeIs('mortgaged.search') ? 'active' : '' }} {{ request()->routeIs('yeartarget') ? 'active' : '' }} {{ request()->routeIs('yeartarget.search') ? 'active' : '' }}">
-                          <i class="nav-icon fa-regular fa-calendar-check" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-regular fa-calendar-check" ></i>
                           <p>
                               Martgaged / Year Target
                               <i class="right fas fa-angle-left"></i>
@@ -91,9 +91,7 @@
                                   class="nav-link {{ request()->routeIs('mortgaged') ? 'active' : '' }} {{ request()->routeIs('mortgaged.search') ? 'active' : '' }}">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00">
-                                          <font style="color: #fffb00"> - </font>
-                                      </font>
+                                    -
                                   </i>
                                   <p>
                                       Mortgaged Report
@@ -105,9 +103,7 @@
                                   class="nav-link {{ request()->routeIs('yeartarget') ? 'active' : '' }} {{ request()->routeIs('yeartarget.search') ? 'active' : '' }}">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00">
-                                          <font style="color: #fffb00"> - </font>
-                                      </font>
+                                    -
                                   </i>
                                   <p>
                                       Year Target Report
@@ -119,7 +115,7 @@
                   <li class="nav-item">
                       <a style="" href=""
                           class="nav-link {{ request()->routeIs('banking') ? 'active' : '' }} {{ request()->routeIs('bank.search') ? 'active' : '' }} {{ request()->routeIs('jobteam') ? 'active' : '' }} {{ request()->routeIs('jobteam.search') ? 'active' : '' }} {{ request()->routeIs('rejected') ? 'active' : '' }} {{ request()->routeIs('rejected.search') ? 'active' : '' }} {{ request()->routeIs('jobstatus') ? 'active' : '' }} {{ request()->routeIs('jobstatus.search') ? 'active' : '' }} {{ request()->routeIs('report') ? 'active' : '' }} {{ request()->routeIs('report.search') ? 'active' : '' }} {{ request()->routeIs('saleinout') ? 'active' : '' }} {{ request()->routeIs('saleinout.search') ? 'active' : '' }}">
-                          <i class="nav-icon fa-solid fa-layer-group" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-solid fa-layer-group" ></i>
                           <p>
                               Report วิเคราะห์
                               <i class="right fas fa-angle-left"></i>
@@ -131,9 +127,7 @@
                                   class="nav-link {{ request()->routeIs('banking') ? 'active' : '' }} {{ request()->routeIs('bank.search') ? 'active' : '' }} ">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00">
-                                          <font style="color: #fffb00"> - </font>
-                                      </font>
+                                    -
                                   </i>
                                   <p>
                                       กราฟสรุปรายงานส่งเข้าธนาคาร
@@ -145,9 +139,7 @@
                                   class="nav-link {{ request()->routeIs('jobteam') ? 'active' : '' }} {{ request()->routeIs('jobteam.search') ? 'active' : '' }}">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00">
-                                          <font style="color: #fffb00"> - </font>
-                                      </font>
+                                    -
                                   </i>
                                   <p>
                                       กราฟรายงานสถานะของทีม
@@ -159,7 +151,7 @@
                                   class="nav-link {{ request()->routeIs('rejected') ? 'active' : '' }} {{ request()->routeIs('rejected.search') ? 'active' : '' }}">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                    -
                                   </i>
                                   <p>
                                       กราฟเหตุผลการ Rejected
@@ -171,7 +163,7 @@
                                   class="nav-link {{ request()->routeIs('jobstatus') ? 'active' : '' }} {{ request()->routeIs('jobstatus.search') ? 'active' : '' }}">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                    -
                                   </i>
                                   <p>
                                       กราฟงานเเต่ละสถานะของทีม
@@ -183,7 +175,7 @@
                                   class="nav-link {{ request()->routeIs('report') ? 'active' : '' }} {{ request()->routeIs('report.search') ? 'active' : '' }} ">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                    -
                                   </i>
                                   <p>
                                       กราฟรายงานทีมวิเคราะห์
@@ -195,7 +187,7 @@
                                   class="nav-link {{ request()->routeIs('saleinout') ? 'active' : '' }} {{ request()->routeIs('saleinout.search') ? 'active' : '' }}">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                    -
                                   </i>
                                   <p>
                                       กราฟรายงาน salein saleout
@@ -206,7 +198,7 @@
                   </li>
                   <li class="nav-item">
                       <a href="" class="nav-link " style="">
-                          <i class="nav-icon fa-solid fa-chart-simple" style="color: #fffb00;"></i>
+                          <i class="nav-icon fa-solid fa-chart-simple" ></i>
                           <p>
                               สรุปรายงานวิเคราะห์
                               <i class="right fas fa-angle-left"></i>
@@ -217,7 +209,7 @@
                               <a style="" href=" " class="nav-link ">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                    -
                                   </i>
                                   <p>
                                       รายงานวิเคราะห์ (New)
@@ -228,7 +220,7 @@
                               <a style="" href=" " class="nav-link ">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                     -
                                   </i>
                                   <p>
                                       รายงานวิเคราะห์ (Year)
@@ -239,7 +231,7 @@
                               <a style="" href=" " class="nav-link ">
                                   &nbsp;&nbsp;
                                   <i class="nav-icon">
-                                      <font style="color: #fffb00"> - </font>
+                                     - 
                                   </i>
                                   <p>
                                       รายงานวิเคราะห์ (Target)

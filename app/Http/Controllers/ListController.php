@@ -22,4 +22,10 @@ class ListController extends Controller
 
         return view('lists.show_list');
     }
+
+    public function edit_lists()
+    {
+
+        return view('lists.edit_list');
+    }
 }

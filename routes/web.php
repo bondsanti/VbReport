@@ -57,6 +57,7 @@ Route::prefix('/report')->group(function () {
     Route::get('/lists',[ListController::class,'index'])->name('lists');
     Route::post('/lists/search',[ListController::class,'search'])->name('lists.search');
     Route::get('/list/view',[ListController::class,'show_list'])->name('list.show');
+    Route::get('/lists/edit',[ListController::class,'edit_lists'])->name('lists.edit');
 
     Route::get('/add',[AddReportController::class,'index'])->name('add');
     Route::get('/editadd',[AddReportController::class,'edit'])->name('edit');

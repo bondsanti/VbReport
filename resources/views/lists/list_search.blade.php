@@ -317,103 +317,304 @@
                             </div>
                         </form>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-header card-outline card-info">
-                                    <h3 class="card-title">ข้อมูล ค้นหารายกาย</h3>
-                                </div>
-                                <div class="card-body">
-                                    <table id="table" class="table table-hover table-striped text-center">
-                                        <thead>
-                                            <tr>
-                                                <th>No.</th>
-                                                <th>Team ID</th>
-                                                <th>Team Name</th>
-                                                <th>Name</th>
-                                                <th>Grade</th>
-                                                <th>อนุมัติ Grade</th>
-                                                <th>Sourcecode</th>
-                                                <th>Tel</th>
-                                                <th>ฐานเงินเดือน</th>
-                                                <th>Bank</th>
-                                                <th>Status</th>
-                                                <th>วันที่เเจ้งโอน</th>
-                                                <th>สถานะเเจ้งโอน</th>
-                                                <th>ประเภทรายได้</th>
-                                                <th>โครงการ</th>
-                                                <th>ห้อง</th>
-                                                <th>Received Date</th>
-                                                <th>Sent Date</th>
-                                                <th>Result Date</th>
-                                                <th>Result Reason</th>
-                                                <th>Remark นิติกรรม</th>
-                                                <th>วงเงินอนุมัติ1</th>
-                                                <th>วงเงินอนุมัติ2</th>
-                                                <th>วงเงินอนุมัติ ไม่รวมประกัน</th>
-                                                <th>ราคาซื้อขาย</th>
-                                                <th>จำนวนเงินการันตี</th>
-                                                <th>เงินการันตีหักภาษี 5 %</th>
-                                                <th>Rej/Wait</th>
-                                                <th>Analyst</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <a class="btn btn-primary btn-sm" href="{{route('list.show')}}">
-                                                        <i class="fas fa-eye"></i>
-                                                        View
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a class="btn btn-info btn-sm" href="#">
-                                                        <i class="fas fa-pencil-alt">
-                                                        </i>
-                                                        Edit
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a class="btn btn-danger btn-sm" href="#">
-                                                        <i class="fas fa-trash">
-                                                        </i>
-                                                        Delete
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card">
+                        <div class="card-header card-outline card-info">
+                            <h3 class="card-title">ข้อมูล ค้นหารายกาย</h3>
+                        </div>
+                        <div class="card-body">
+                            <table id="table" class="table table-hover table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Team ID</th>
+                                        <th>Team Name</th>
+                                        <th>Name</th>
+                                        <th>Grade</th>
+                                        <th>อนุมัติ Grade</th>
+                                        <th>Sourcecode</th>
+                                        <th>Tel</th>
+                                        <th>ฐานเงินเดือน</th>
+                                        <th>Bank</th>
+                                        <th>Status</th>
+                                        <th>วันที่เเจ้งโอน</th>
+                                        <th>สถานะเเจ้งโอน</th>
+                                        <th>ประเภทรายได้</th>
+                                        <th>โครงการ</th>
+                                        <th>ห้อง</th>
+                                        <th>Received Date</th>
+                                        <th>Sent Date</th>
+                                        <th>Result Date</th>
+                                        <th>Result Reason</th>
+                                        <th>Remark นิติกรรม</th>
+                                        <th>วงเงินอนุมัติ1</th>
+                                        <th>วงเงินอนุมัติ2</th>
+                                        <th>วงเงินอนุมัติ ไม่รวมประกัน</th>
+                                        <th>ราคาซื้อขาย</th>
+                                        <th>จำนวนเงินการันตี</th>
+                                        <th>เงินการันตีหักภาษี 5 %</th>
+                                        <th>Rej/Wait</th>
+                                        <th>Analyst</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <div class="form-group">
+                                                <select class="form-control" name="" id="">
+                                                    <option value="">โปรดเลือก</option>
+                                                    <option value="A">A</option>
+                                                    <option value="B">B</option>
+                                                    <option value="C">C</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>
+                                            <a class="btn btn-primary btn-sm" href="{{ route('list.show') }}">
+                                                <i class="fas fa-eye"></i>
+                                                View
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-info btn-sm" href="{{ route('lists.edit') }}">
+                                                <i class="fas fa-pencil-alt">
+                                                </i>
+                                                Edit
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-danger btn-sm" href="#">
+                                                <i class="fas fa-trash">
+                                                </i>
+                                                Delete
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8"></div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-header card-outline card-info">
+                            <h3 class="card-title">สรุปจำนวนใบสมัคร</h3>
+                        </div>
+                        <div class="card-body">
+                            <table id="table" class="table table-hover table-striped text-center">
+                                <tbody>
+                                    <tr>
+                                        <td>จำนวนลูกค้า</td>
+                                        <td>25</td>
+                                        <td>คน</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>ใบสมัครทั้งหมด</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Received คงค้าง</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Returned</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pending</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Canceled</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rejected Analyst</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rejected Bank</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waiting</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Req Doc By Bank</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pre-Approved Analyst</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pre-Approved Bank</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approved</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Canceled (Waiting)</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mortgaged</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ใบสมัครทั้งหมด</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-header card-outline card-info">
+                            <h3 class="card-title">สรุปธนาคาร</h3>
+                        </div>
+                        <div class="card-body">
+                            <table id="table" class="table table-hover table-striped text-center">
+                                <thead>
+                                    <tr>
+                                        <th>ธนาคาร</th>
+                                        <th>จำนวน</th>
+                                        <th>ใบ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>BAY</td>
+                                        <td>0</td>
+                                        <td>ใบ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BBL</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>CIMB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GSB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ISALAM</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>KBANK</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>KK</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>KTB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>SCB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TBANK</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>TMB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>UOB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>เงินสด</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>GHB</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ใบสมัครทั้งหมด</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
