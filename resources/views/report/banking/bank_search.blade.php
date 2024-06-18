@@ -114,3 +114,28 @@
         </div>
     </section>
 @endsection
+@push('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $('#table').DataTable({
+            'paging': false,
+            'lengthChange': false,
+            'searching': false,
+            'ordering': true,
+            'info': false,
+            'autoWidth': false,
+            "responsive": true,
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [0, 1, 2, 3, 4, 5, 6, 7]
+            }]
+        });
+    });
+</script>
+@endpush

@@ -31,7 +31,7 @@
                                             <label for="name_team" class="form-label">
                                                 <font style="color:red">*</font> ชื่อทีม
                                             </label>
-                                            <Select class="form-control">
+                                            <Select class="form-control" required>
                                                 <option value="">โปรดเลือก</option>
                                             </Select>
                                         </div>
@@ -39,7 +39,7 @@
                                             <label for="" class="form-label">
                                                 <font style="color:red">*</font> ชื่อลูกค้า
                                             </label>
-                                            <input type="text" name="name_th" id="name_th" class="form-control">
+                                            <input type="text" name="name_th" id="name_th" class="form-control" required>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-form-label">
@@ -48,7 +48,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="gridRadios"
-                                                        id="gridRadios1" value="option1" checked>
+                                                        id="gridRadios1" value="option1">
                                                     <label class="form-check-label" for="gridRadios1">
                                                         มีสวัสดิการ
                                                     </label>
@@ -100,13 +100,13 @@
                                             <label for="sale_id" class="form-label">
                                                 <font style="color:red">*</font> Sale ID
                                             </label>
-                                            <input type="text" class="form-control" name="sale_id" id="sale_id">
+                                            <input type="text" class="form-control" name="sale_id" id="sale_id" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="" class="form-label">
                                                 <font style="color: red">*</font> สถานที่ทำงาน
                                             </label>
-                                            <input type="text" name="" id="" class="form-control">
+                                            <input type="text" name="" id="" class="form-control" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="" class="form-label">
@@ -125,7 +125,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="gridRadios"
-                                                        id="gridRadios10" value="option10" checked>
+                                                        id="gridRadios10" value="option10">
                                                     <label class="form-check-label" for="gridRadios10">
                                                         อยู่เอง
                                                     </label>
@@ -184,7 +184,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" name="checkbox"
-                                                        id="checkbox1" value="option1" checked>
+                                                        id="checkbox1" value="option1">
                                                     <label class="form-check-label" for="checkbox1">
                                                         ธอส
                                                     </label>

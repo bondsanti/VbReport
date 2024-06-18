@@ -110,11 +110,7 @@
                                             <label class="form-label" for="">หมายเหตุ (วิเคราะห์)</label>
                                             <textarea class="form-control" name="" id=""></textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="">วันที่ส่งงาน</label>
-                                            <input type="date" class="form-control" name="" id=""
-                                                value="">
-                                        </div>
+p 
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="form-group">

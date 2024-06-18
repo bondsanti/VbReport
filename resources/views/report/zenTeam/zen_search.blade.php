@@ -59,7 +59,7 @@
                                     <h3 class="card-title"> รายงาน P Zen Team </h3>
                                 </div>
                                 <div class="card-body">
-                                    <table id="table" class="table table-hover table-striped text-center">
+                                    <table id="table" class="table table-hover table-striped text-center" style="width:100%">
                                         <thead>
                                             <tr>
                                                 <th>ลูกทีม</th>
@@ -106,3 +106,28 @@
         </div>
     </section>
 @endsection
+@push('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $('#table').DataTable({
+            'paging': false,
+            'lengthChange': false,
+            'searching': false,
+            'ordering': true,
+            'info': false,
+            'autoWidth': false,
+            "responsive": true,
+            "columnDefs": [{
+                "orderable": false,
+                "targets": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+            }]
+        });
+    });
+</script>
+@endpush

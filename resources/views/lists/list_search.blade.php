@@ -320,13 +320,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12">
+                <div class="col-md-12">
                     <div class="card">
                         <div class="card-header card-outline card-info">
                             <h3 class="card-title">ข้อมูล ค้นหารายกาย</h3>
                         </div>
                         <div class="card-body">
-                            <table id="table" class="table table-hover table-striped text-center">
+                            <table id="my-table" class="table table-hover table-striped text-center"
+                            style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>No.</th>
@@ -358,6 +359,7 @@
                                         <th>เงินการันตีหักภาษี 5 %</th>
                                         <th>Rej/Wait</th>
                                         <th>Analyst</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -369,7 +371,7 @@
                                         <td>
                                             <div class="form-group">
                                                 <select class="form-control" name="" id="">
-                                                    <option value="">โปรดเลือก</option>
+                                                    <option value=""></option>
                                                     <option value="A">A</option>
                                                     <option value="B">B</option>
                                                     <option value="C">C</option>
@@ -405,15 +407,11 @@
                                                 <i class="fas fa-eye"></i>
                                                 View
                                             </a>
-                                        </td>
-                                        <td>
                                             <a class="btn btn-info btn-sm" href="{{ route('lists.edit') }}">
                                                 <i class="fas fa-pencil-alt">
                                                 </i>
                                                 Edit
                                             </a>
-                                        </td>
-                                        <td>
                                             <a class="btn btn-danger btn-sm" href="#">
                                                 <i class="fas fa-trash">
                                                 </i>
@@ -428,14 +426,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-8"></div>
-                <div class="col-sm-2">
+                <div class="col-md-8"></div>
+                <div class="col-md-2">
                     <div class="card">
                         <div class="card-header card-outline card-info">
                             <h3 class="card-title">สรุปจำนวนใบสมัคร</h3>
                         </div>
                         <div class="card-body">
-                            <table id="table" class="table table-hover table-striped text-center">
+                            <table class="table table-hover table-striped text-center">
                                 <tbody>
                                     <tr>
                                         <td>จำนวนลูกค้า</td>
@@ -523,13 +521,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-md-2">
                     <div class="card">
                         <div class="card-header card-outline card-info">
                             <h3 class="card-title">สรุปธนาคาร</h3>
                         </div>
                         <div class="card-body">
-                            <table id="table" class="table table-hover table-striped text-center">
+                            <table class="table table-hover table-striped text-center">
                                 <thead>
                                     <tr>
                                         <th>ธนาคาร</th>
@@ -622,15 +620,16 @@
         </div>
     </section>
 @endsection
+@push('script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.6/xlsx.full.min.js"></script>
 <script>
     $(document).ready(function() {
-
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        $('#table').DataTable({
+        $('#my-table').DataTable({
             'paging': false,
             'lengthChange': false,
             'searching': false,
@@ -640,8 +639,9 @@
             "responsive": true,
             "columnDefs": [{
                 "orderable": false,
-                "targets": [0, 1, 2, 3]
+                "targets": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
             }]
         });
     });
 </script>
+@endpush

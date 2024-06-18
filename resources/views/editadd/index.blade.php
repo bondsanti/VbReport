@@ -64,16 +64,16 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <form action="">
+                                    <form action="" method="POST">
                                         <div class="modal-body">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" name="" id="">
+                                                <input type="text" class="form-control" name="" id="" placeholder="กรอกชื่อทีมใหม่" required>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save</button>
+                                            <button type="button" class="btn btn-danger"
+                                                data-dismiss="modal">ยกเลิก</button>
+                                            <button type="submit" class="btn btn-success">บันทึก</button>
                                         </div>
                                     </form>
                                 </div>
@@ -99,9 +99,9 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save</button>
+                                                <button type="button" class="btn btn-danger"
+                                                    data-dismiss="modal">ยกเลิก</button>
+                                                <button type="save" class="btn btn-success">บันทึก</button>
                                             </div>
                                         </form>
                                     </div>
@@ -132,7 +132,7 @@
             "responsive": true,
             "columnDefs": [{
                 "orderable": false,
-                "targets": [0, 1, 2, 3]
+                // "targets": [0, 1, 2, 3]
             }]
         });
 
